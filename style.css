@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: url('img/weather\ img.jpg');
+  background-image: url('img/weather img.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,6 @@ body {
   max-width: 400px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
 
 input {
   padding: 10px;
@@ -42,4 +41,57 @@ button {
 #weatherResult {
   margin-top: 20px;
   font-size: 18px;
+}
+
+/* Responsive Styles */
+
+/* Mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    max-width: 95%;
+  }
+  
+  input {
+    width: 100%;
+    margin: 0 0 10px 0;
+    display: block;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 450px;
+  }
+
+  input {
+    width: 70%;
+    margin-right: 10px;
+  }
+
+  button {
+    width: 25%;
+  }
+}
+
+/* Laptops and desktops (769px and above) */
+@media (min-width: 769px) {
+  .container {
+    max-width: 400px; /* your original */
+  }
+
+  input {
+    width: 200px;
+    margin-right: 10px;
+  }
+
+  button {
+    width: auto;
+  }
 }
